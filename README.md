@@ -47,10 +47,6 @@ Deploy MongoDB to the cluster. You can use a Helm chart or any other approach:
 
 bash
 
-# If using Helm (example):
-helm repo add bitnami https://charts.bitnami.com/bitnami
-helm install mongodb bitnami/mongodb
-
 Usage
 
     Ensure that the application takes MongoDB connection details from environment variables.
