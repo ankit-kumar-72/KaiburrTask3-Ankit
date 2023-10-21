@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kaiburrapplication
+spec:
+  selector:
+    matchLabels:
+      app: kaiburrapplication
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: kaiburrapplication
+    spec:
+      containers:
+      - name: kaiburrapplication
+        image: kaiburrapplication-0.0.1-snapshot:1.0  # <-- Corrected image name and tag
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080

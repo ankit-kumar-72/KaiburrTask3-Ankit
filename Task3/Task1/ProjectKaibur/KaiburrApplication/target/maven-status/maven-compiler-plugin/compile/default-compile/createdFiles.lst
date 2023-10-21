@@ -1,0 +1,5 @@
+com\kaiburr\ServerApplication.class
+com\kaiburr\controller\ServerController.class
+com\kaiburr\model\Server.class
+com\kaiburr\repository\ServerRepository.class
+com\kaiburr\service\ServerService.class
